@@ -112,6 +112,12 @@ namespace AspNetCoreRateLimit
                     // search for rules with endpoints like "matching_verb:/matching_path" in general rules
                     var verbLimits = _options.GeneralRules.Where(r => $"{identity.HttpVerb}:{identity.Path}".IsUrlMatch(r.Endpoint, _options.EnableRegexRuleMatching));
                     matchingGeneralLimits.AddRange(verbLimits);
+
+                    //remove general rules if there is any absolute matching url
+                    if (matchingGeneralLimits.Count > 1 && matchingGeneralLimits.Any(a => !a.Endpoint.Contains("*")))
+                    {
+                        matchingGeneralLimits = matchingGeneralLimits.Where(a => !a.Endpoint.Contains("*")).ToList();
+                    }
                 }
                 else
                 {
