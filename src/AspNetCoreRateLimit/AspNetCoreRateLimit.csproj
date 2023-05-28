@@ -5,12 +5,12 @@
 		<Description>ASP.NET Core rate limiting middleware</Description>
 		<Authors>Stefan Prodan, Cristi Pufu</Authors>
 		<AssemblyName>AspNetCoreRateLimit</AssemblyName>
-		<PackageId>AspNetCoreRateLimit</PackageId>
+		<PackageId>AspNetCoreRateLimit.AbsoluteUrl</PackageId>
 		<PackageTags>aspnetcore;rate-limit;throttle</PackageTags>
-		<PackageProjectUrl>https://github.com/stefanprodan/AspNetCoreRateLimit</PackageProjectUrl>
+		<PackageProjectUrl>https://github.com/NavidRsh/AspNetCoreRateLimit</PackageProjectUrl>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<RepositoryType>git</RepositoryType>
-		<RepositoryUrl>https://github.com/stefanprodan/AspNetCoreRateLimit</RepositoryUrl>
+		<RepositoryUrl>https://github.com/NavidRsh/AspNetCoreRateLimit</RepositoryUrl>
 		<Version>5.0.0</Version>
 		<SignAssembly>true</SignAssembly>
 		<AssemblyOriginatorKeyFile>../../sgKey.snk</AssemblyOriginatorKeyFile>
